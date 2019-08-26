@@ -1,0 +1,29 @@
+.footer {
+  background-image: url("../img/footer_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $main-bg-color;
+  height: 125px;
+
+  &__container {
+    width: 1170px;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  &__copyright {
+    font-family: $main-font;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 40px;
+  }
+}
+
+.footer {
+  @media (max-width: 575px) {
+    &__container {
+      width: 90%;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.page {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+
+  &__header {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__get-card {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__service {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__statistics {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__contact-info {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__footer {
+    height: 100%;
+    width: 100%;
+  }
+}

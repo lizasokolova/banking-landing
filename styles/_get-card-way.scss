@@ -1,0 +1,88 @@
+.get-card-way {
+  width: 370px;
+  height: 340px;
+  border: 1px solid #dbdada;
+  padding: 45px 35px;
+  transition: 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &__title {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: $main-font;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: $sub-font;
+    font-size: 14px;
+    line-height: 28px;
+    color: $sub-font-color;
+  }
+
+  &_online-application::before {
+    content: "";
+    display: block;
+    background-color: white;
+    background-image: url("../img/card_step_1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  &_get-approval::before {
+    content: "";
+    display: block;
+    background-color: white;
+    background-image: url("../img/card_step_2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  &_get-your-card::before {
+    content: "";
+    display: block;
+    background-color: white;
+    background-image: url("../img/card_step_3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  &:hover {
+    background-color: #0b49e7;
+    height: 100%;
+    color: white;
+    padding: 90px 35px;
+
+    .get-card-way__description {
+      color: white;
+    }
+  }
+}
+
+.get-card-way {
+  @media (max-width: 575px) {
+    height: auto;
+  }
+}

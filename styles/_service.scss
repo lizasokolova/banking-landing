@@ -1,0 +1,80 @@
+.service {
+  &__container {
+    width: 1170px;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 150px;
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    font-family: $main-font;
+    font-weight: 400;
+    color: $sub-font-color;
+    text-transform: uppercase;
+    line-height: 100%;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-family: $main-font;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $main-font-color;
+    line-height: 100%;
+    margin-bottom: 65px;
+  }
+
+  &__carousel {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 160px;
+    margin-left: -60px;
+    margin-right: -60px;
+  }
+
+  &__item {
+    margin: 0;
+  }
+
+  &__carousel::before {
+    content: "";
+    background-image: url("../img/carousel_pointer.png");
+    transform: rotate(180deg);
+    width: 35px;
+    height: 25px;
+    background-repeat: no-repeat;
+    align-self: center;
+    cursor: pointer;
+  }
+
+  &__carousel::after {
+    content: "";
+    background-image: url("../img/carousel_pointer.png");
+    width: 35px;
+    height: 25px;
+    background-repeat: no-repeat;
+    align-self: center;
+    cursor: pointer;
+  }
+}
+
+.service {
+  @media (max-width: 575px) {
+    &__container {
+      width: 90%;
+      padding-top: 100px;
+    }
+
+    &__carousel {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 100px;
+    }
+
+    &__item {
+      margin-right: 20px;
+    }
+  }
+}

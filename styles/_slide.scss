@@ -1,0 +1,23 @@
+.slide {
+  width: 270px;
+  height: 350px;
+  border: 1px solid grey;
+
+  &__caption {
+    font-family: $main-font;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 25px;
+    line-height: 70px;
+    vertical-align: middle;
+  }
+}
+
+figure.slide {
+  padding: 0px;
+}
+
+figcaption.slide__caption {
+  margin: 0px;
+  padding: 0px;
+}
